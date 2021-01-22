@@ -1,3 +1,4 @@
+#if 0
 #include <Windows.h>
 
 LRESULT CALLBACK KNWindowProc(HWND window, UINT msg, WPARAM wParam, LPARAM lParam)
@@ -68,6 +69,14 @@ int WinMain(HINSTANCE instance, HINSTANCE prevInstance, LPSTR cmdLine, int showC
 		TranslateMessage(&msg);
 		DispatchMessage(&msg);
 	}
+
+	return(0);
+}
+#endif
+
+int main()
+{
+	int x = 5;
 
 	return(0);
 }
